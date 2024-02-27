@@ -37,7 +37,7 @@ const Modal = ({ setModal, animateModal, setAnimateModal, saveCost, editCost, se
             }, 2000);
             return;
         }
-        saveCost({ name, amount, category, id , date });
+        saveCost({ name, amount, category, id, date });
     }
     return (
         <div className="modal">
@@ -52,7 +52,7 @@ const Modal = ({ setModal, animateModal, setAnimateModal, saveCost, editCost, se
                     <input id="name" type="text" placeholder="Añade el nombre del gasto" value={name} onChange={e => setName(e.target.value)} />
                 </div>
                 <div className="field">
-                    <label htmlFor="amount"> Nombre Gasto</label>
+                    <label htmlFor="amount"> Cantidad Gasto</label>
                     <input id="amount" type="number" placeholder="Añade la cantidad del gasto: ej. 20000" value={amount} onChange={e => setAmount(Number(e.target.value))} />
                 </div>
                 <div className="field">
